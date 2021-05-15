@@ -14,13 +14,13 @@ public class MyThread implements Runnable {
         Thread currentThread = Thread.currentThread();
         //这里调试多线程,右键断点可以看到有个all和thread选项,选择thread可以多线程调试,每条线程都会停顿一次,不要设置为default,
         //不然会很大程度影响调试的性能
-        System.out.println(currentThread.getName()+"-=====================起始");
+        System.out.println(currentThread.getName() + "-=====================起始");
         try {
             TimeUnit.SECONDS.sleep(2);
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }finally {
-            System.out.println(currentThread.getName()+"=========================离开");
+        } finally {
+            System.out.println(currentThread.getName() + "=========================离开");
         }
     }
 }

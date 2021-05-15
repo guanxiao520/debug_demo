@@ -2,6 +2,7 @@ package com.carycary;
 
 import com.carycary.support.IService;
 import com.carycary.support.IServiceImpl;
+import com.carycary.support.Person;
 
 /**
  * @author gx_hp
@@ -39,8 +40,8 @@ public class BreakPointDemo {
 
     //想要追踪某个字段的变化流程,可以在实体类当中给字段打上断点,然后逐步追踪字段的每个变化,
     // 右键断点设置也可以设置不光是修改,访问字段也会停顿
-    public static void field(){
-        Person p =new Person("字段断点",10);
+    public static void field() {
+        Person p = new Person("字段断点", 10);
         p.setAge(12);
         System.out.println(p);
         System.out.println(p.getAge());
