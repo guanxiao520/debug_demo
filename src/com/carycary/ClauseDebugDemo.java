@@ -44,11 +44,19 @@ public class ClauseDebugDemo {
         }
     }
 
+
+    public static void reloadChanges(){
+        Person p = new Person("change", 20);
+        System.out.println(p);
+    }
+
     public static void main(String[] args) {
         // back();
         // setValue();
         // clause();
-        watchVar();
+        // watchVar();
+        reloadChanges();
     }
+
 
 }

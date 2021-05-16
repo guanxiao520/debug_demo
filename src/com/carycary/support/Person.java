@@ -10,6 +10,8 @@ package com.carycary.support;
 public class Person {
     private String name;
     private int age;
+
+    private String msg;
     //alt +insert
 
     public String getName() {
@@ -38,6 +40,7 @@ public class Person {
         return "Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", msg='" + msg + '\'' +
                 '}';
     }
 }
